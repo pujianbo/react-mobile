@@ -1,0 +1,82 @@
+.confirm {
+    .mask {
+        display: block;
+    }
+
+    .cfm {
+        width: 560px;
+        height: auto;
+        position: fixed;
+        left: calc(50% - 280px);
+        left: -moz-calc(50% - 280px);
+        left: -webkit-calc(50% - 280px);
+        top: 35%;
+        background-color: #fff;
+        border-radius: 10px;
+        z-index: 16;
+    }
+
+    .title {
+        line-height: 94px;
+        height: 94px;
+        text-align: center;
+        color: $colorBlue;
+        font-size: 34px;
+    }
+
+    .content {
+        font-size: 28px;
+        text-align: center;
+        color: #333333;
+        padding: 0 30px 40px;
+
+        .cfmkb {
+            width: 100px;
+        }
+    }
+
+    .cfm_content {
+        word-wrap: break-word;
+        max-height: 151px;
+        display: block;
+        overflow: auto;
+    }
+
+    .bottom {
+        height: 88px;
+        line-height: 88px;
+        border-top: 1px solid #ddd;
+        //position: absolute;
+        //bottom: 0;
+        //left: 0;
+        //right: 0;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        text-align: center;
+        font-size: 34px;
+
+        .item {
+            flex: 1;
+            color: #666;
+            border-left: 1px solid #ccc;
+            box-sizing: border-box;
+
+            &:first-child {
+                border-left: 0;
+            }
+        }
+
+        .sure {
+            color: $colorBlue;
+        }
+
+        .cancel {
+            color: $colorRed;
+        }
+
+        .cancel2 {
+            color: #333;
+        }
+    }
+}

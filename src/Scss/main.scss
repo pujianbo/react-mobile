@@ -1,0 +1,281 @@
+.sbmtbtn {
+  background-color: #64C274;
+  color: #fff;
+  font-size: 36px;
+  line-height: 90px;
+  text-align: center;
+  border-radius: 6px;
+  letter-spacing: 3px;
+}
+
+.write {
+  background-color: #F2F4F5;
+  min-height: 100vh;
+  overflow: hidden;
+
+  .form {
+    margin: 24px;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 8px 0 hsla(0,0,0,0.15);
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+    }
+
+    textarea {
+      min-height: 60vh;
+      margin-bottom: 32px;
+      font-size: 28px;
+    }
+
+    input {
+      @extend .sbmtbtn;
+    }
+  }
+}
+
+.read {
+  .sltbar {
+    display: block;
+    background-color: #DFF4E2;
+    color: #666;
+    line-height: 79px;
+    padding: 0 54px;
+
+    span {
+      font-size: 28px;
+      width: 50%;
+      padding-left: 40px;
+      background: url("../Img/icon/time.png") no-repeat left center /30px;
+    }
+
+    select {
+      font-size: 30px;
+      font-weight: bold;
+      padding-right: 60px;
+      padding-left: 30px;
+      line-height: inherit;
+      border-left: 1px solid #DDDDDD;
+      background: url("../Img/icon/slt.png") no-repeat right center /17px;
+    }
+  }
+
+  .books {
+    padding: 2px 21px;
+
+    li {
+      float: left;
+      width: 33.33%;
+      margin-top: 64px;
+    }
+
+    .item {
+      display: block;
+      padding: 0 33px;
+      font-size: 24px;
+      color: #666;
+
+      p {
+        line-height: 33px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.select {
+  .w-tabs-bar {
+    border-bottom: 0;
+  }
+
+  .w-tabs-nav {
+    background-color: #F2F4F5;
+    border-bottom: 0;
+
+    .w-tabs-tab {
+      width: 50%;
+      text-align: center;
+      font-size: 28px;
+      padding: 28px 0 !important;
+
+      &.w-active {
+        color: #63c273;
+      }
+    }
+
+    .w-tabs-slide {
+      background-color: #63c273;
+      border-radius: 3px;
+      height: 6px;
+      border: 10px solid #f2f4f5;
+      border-width: 0 10vw;
+    }
+  }
+
+  .form {
+    padding: 57px;
+
+    input,
+    select {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+
+      &[type=submit] {
+        @extend .sbmtbtn;
+      }
+    }
+
+    input[type=text],
+    select {
+      line-height: 60px;
+      font-size: 28px;
+      border-radius: 6px;
+      border: 1px solid #BBBBBB;
+      padding: 15px 20px;
+      margin-bottom: 90px;
+    }
+
+    select {
+      background: #fff url("../Img/icon/slt.png") no-repeat right 20px center /17px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.selectresult {
+  .header {
+    padding: 0 24px;
+    text-align: left;
+
+    .title {
+      position: relative;
+    }
+
+    p {
+      color: #999;
+      font-size: 24px;
+
+      span {
+        padding-left: 20px;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      width: 79px;
+      height: 79px;
+    }
+  }
+
+  .items {
+    padding-bottom: 100px;
+
+    > li {
+      padding: 20px 24px;
+      border-bottom: 1px solid #DDDDDD;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      .user {
+        a {
+          line-height: 70px;
+        }
+
+        img {
+          width: 70px;
+          height: 70px;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+
+        tag {
+          border: 1px solid #07A922;
+          background-color: #DFF4E2;
+          color: #07A922;
+          border-radius: 4px;
+          padding: 2px 7px;
+          font-size: 20px;
+          margin-top: 20px;
+        }
+      }
+
+      .txt {
+        margin: 20px 0;
+        font-size: 28px;
+      }
+
+      .info {
+        .chat {
+          background-color: #F2F4F5;
+          padding: 12px 20px;
+          color: #666;
+
+          span {
+            color: #4283CE;
+          }
+
+          li {
+            margin: 8px 0;
+            line-height: 33px;
+          }
+        }
+
+        .other {
+          color: #999;
+          margin-top: 22px;
+
+          span {
+            padding-left: 40px;
+            background: url("../Img/icon/nice.png") no-repeat left center /30px;
+            margin-left: 60px;
+          }
+
+          .review {
+            background-image: url("../Img/icon/review.png");
+          }
+          .niceed {
+            background-image: url("../Img/icon/niceed.png");
+            color: #f18059;;
+          }
+        }
+      }
+    }
+  }
+  .sltcomment{
+    background-color: #eee;
+    font-size: 28px;
+    padding: 24px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    input[type=text]{
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      flex: 1;
+      height: 40px;
+      line-height: 40px;
+      padding: 10px;
+    }
+    input[type=submit]{
+      background-color: #64C274;
+      color: #fff;
+      border-radius: 6px;
+      flex: none;
+      padding: 0 40px;
+      margin-left: 30px;
+    }
+  }
+  .footer{
+    z-index: 20;
+  }
+}

@@ -1,0 +1,17 @@
+@import "common/quote.scss";
+
+.index {
+  width: 80%;
+  margin: 10%;
+
+  a {
+    font-size: 36px;
+    display: block;
+    margin: 30px 0;
+    text-decoration: underline;
+
+    &:hover {
+      color: #64C274;
+    }
+  }
+}

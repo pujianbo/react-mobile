@@ -1,0 +1,56 @@
+.errorpage {
+  font-family: 'Nova Flat', cursive;
+  background-color: #B396FF;
+  color: #fff;
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .msg {}
+
+  h1 {
+    font-size: 40px;
+  }
+  h2{
+    font-size: 32px;
+  }
+
+  span {
+    font-size: 150px;
+    padding: 10px;
+  }
+
+  p {
+    padding: 25px 0;
+
+    img {
+      width: 128px;
+    }
+  }
+
+  .gohomelink {
+    display: inline-block;
+    padding: 4px 16px;
+    margin-bottom: 0;
+    font-weight: normal;
+    line-height: 2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+    font-weight: bold;
+  }
+}

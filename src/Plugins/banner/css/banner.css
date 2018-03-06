@@ -1,0 +1,72 @@
+.banner, .banner .imgs {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .imgs ul {
+    width: 9999px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.banner .imgs li {
+    float: left;
+    width: 100%;
+}
+
+.banner .imgs li a {
+    display: block;
+}
+
+.banner .imgs li img {
+    width: 100%;
+}
+
+.banner .status {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right:0;
+    z-index: 4;
+    text-align: center;
+}
+
+.banner .status a {
+    width: .5rem;
+    height: .5rem;
+    margin: 0 .3rem;
+    padding: 0;
+    background: #d5d5d5;
+    display: inline-block;
+    text-indent: -1000px;
+    border-radius: 50%;
+}
+
+.banner .status a.active {
+    background: #fff;
+}
+
+.banner .position {
+    opacity: 0;
+    width: 100%;
+}
+
+.banner .btncommon {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 80px;
+    margin-top: -40px;
+    display: none;
+}
+
+
+.banner .btn_prev,.banner .btn_next {
+    overflow: hidden;
+}
+
+.banner:hover .btncommon {
+    display: block;
+}

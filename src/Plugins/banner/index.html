@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	<meta name="keywords" content="关健词">
+	<meta name="description" content="描述">
+	<title>bannerTouch</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/banner.css">
+	<script src="http://libs.baidu.com/jquery/1.6.4/jquery.min.js"></script>
+	<script src="js/banner.js"></script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		$(function() {
+			//添加序号
+			for (var i = 1; i <= $('.banner li').length; i++) {
+				$('.banner .status').append('<a></a>');
+			}
+			//调用轮播
+			$(".imgs").touchSlider({
+				flexible: true,
+				speed: 75,
+				btn_prev: $(".btn_prev"),
+				btn_next: $(".btn_next"),
+				paging: $(".status a"),
+				counter: function(e) {
+					$(".status a").removeClass("active").eq(e.current - 1).addClass("active");
+				}
+			});
+
+			//自动滚动
+			var moveTime = 3000;
+			timer = setInterval(function() {
+				$(".btn_next").click();
+			}, moveTime);
+
+			//鼠标经过事件关闭定时器
+			$(".banner").hover(function() {
+				clearInterval(timer);
+			}, function() {
+				timer = setInterval(function() {
+					$(".btn_next").click();
+				}, moveTime);
+			});
+
+			//滑动事件关闭定时器
+			$(".banner").bind("touchstart", function() {
+				clearInterval(timer);
+			}).bind("touchend", function() {
+				timer = setInterval(function() {
+					$(".btn_next").click();
+				}, moveTime);
+			});
+
+		});
+	</script>
+	<div style="width: 100%; max-width: 1000px; margin: 0 auto;">
+		<div class="banner">
+			<div class="status"></div>
+			<div class="imgs">
+				<img src="img/1.jpg" class="position">
+				<ul>
+					<li>
+						<a href="#"><img src="img/1.jpg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/2.jpg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/3.jpg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="img/4.jpg" /></a>
+					</li>
+				</ul>
+				<a class="btncommon btn_prev"></a>
+				<a class="btncommon btn_next"></a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

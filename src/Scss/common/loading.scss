@@ -1,0 +1,26 @@
+.loading {
+    text-align: center;
+
+    span {
+        padding: 60px 20px;
+        display: inline-block;
+    }
+
+    .ing {
+        color: #807c7c;
+        padding-left: 36px;
+        background: url("../../img/icon/load.gif") no-repeat left center;
+        background-size: 1rem;
+    }
+
+    .no {
+        color: #ccc;
+        padding: 0;
+        display: block;
+        position: fixed;
+        left: 30px;
+        right: 30px;
+        top: 50%;
+        font-size: 24px;
+    }
+}

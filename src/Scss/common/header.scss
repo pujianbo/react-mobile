@@ -1,0 +1,41 @@
+@import "quote.scss";
+$headerHeight: 128px;
+$colorHeaderBg: #fff;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: $headerHeight;
+  background-color: #fff;
+  border-bottom: 1px solid #DDDDDD;
+  text-align: center;
+
+  .title {
+    display: inline-block;
+    padding-left: 91px;
+    margin-top: 24px;
+    background: url("../../Img/logo.png") no-repeat center left /79px;
+
+    h5 {
+      font-size: 30px;
+      line-height: 42px;
+      margin: 4px 0;
+      text-align: left;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 28px;
+      text-align: left;
+    }
+  }
+
+  & + div {
+    padding-top: $headerHeight;
+    box-sizing: border-box;
+  }
+}

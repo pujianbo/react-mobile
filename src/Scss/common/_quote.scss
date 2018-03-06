@@ -1,0 +1,18 @@
+//public color、size、function
+$colorBlack: #000;
+$colorBorder: #ccc;
+$colorWhite: #FFF;
+$colorRed: #FF626D; //use
+$colorBlue: #01B4EE; //use
+$colorOrange: #F87942;
+$colorGary: #999999;
+$colorYellow: #F8BE41;
+$colorBrown: #E1932E;
+$fontBig: 24;
+$screenBig: 750;
+
+.text-els {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
