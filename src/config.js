@@ -14,8 +14,8 @@ module.exports = {
 
     getAgent: function() {
         return {
-            '/server/*': {
-                target: this.agentSev
+            '/addimgstoword/*': {
+                target: 'http://47.92.80.207:8090'
             },
             '/jxt-commonbackground/*': {
                 target: this.agentSev

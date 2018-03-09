@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import ReactDOM, {render} from 'react-dom';
 import {Provider} from 'react-redux';
-import route from './Router';
+import route from './router';
 import store from './Redux/store';
 
 //引用样式
@@ -10,9 +10,7 @@ import './Scss/common/media.scss'
 import './Scss/common/public.scss'
 import './Scss/main.scss'
 
-//引入react-weui
-import 'weui';
-import 'react-weui/build/packages/react-weui.css';
+
 
 //引入vconsole调试
 // import './js/vconsole.js'

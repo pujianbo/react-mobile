@@ -1,3 +1,14 @@
 {
-    "presets": ["stage-0"]
+  "presets": ["stage-0"],
+  "plugins": [
+    ["import", [{
+        "libraryName": "antd",
+        "libraryDirectory": "lib",
+        "style": true
+      },
+      {
+        "libraryName": "antd-mobile"
+      },
+    ]]
+  ]
 }

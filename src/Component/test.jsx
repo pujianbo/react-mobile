@@ -1,7 +1,12 @@
 'use strict';
 import React, {Component} from 'react'
-
 import {Button, Dialog, Page} from 'react-weui';
+import {Tips, ajax} from '../tools'
+
+
+//ui
+import 'weui';
+import 'react-weui/build/packages/react-weui.css';
 
 export default class test extends Component {
   constructor(props) {
@@ -34,6 +39,18 @@ export default class test extends Component {
         ]
       }
     }
+  }
+  componentDidMount(){
+    console.log(23);
+    ajax({
+      url: '/addimgstoword/',
+      data: {
+        id: 23
+      },
+      success: (res => {
+        console.log(res);
+      })
+    })
   }
 
   hideDialog() {
